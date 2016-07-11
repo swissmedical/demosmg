@@ -15,7 +15,7 @@ rule "No Mayor Edad"
 ruleflow-group "validacionApto-Group"
 lock-on-active true
 when
-    $a : ar.com.amg.droolssmg.Afiliado(edad =< 18);
+    $a : ar.com.amg.droolssmg.Afiliado(edad <= 18);
     $r : ar.com.amg.droolssmg.Respuesta();
 then
     $r.setApto(false);
