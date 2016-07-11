@@ -9,5 +9,16 @@ when
 then
     $r.setApto(true);
     update( $r );
-    System.out.println("******Mayor EdadK*****");
+    System.out.println("******Mayor Edad OK*****");
+end
+rule "No Mayor Edad"
+ruleflow-group "validacionApto-Group"
+lock-on-active true
+when
+    $a : ar.com.amg.droolssmg.Afiliado(edad >= 18);
+    $r : ar.com.amg.droolssmg.Respuesta();
+then
+    $r.setApto(false);
+    update( $r );
+    System.out.println("******Mayor Edad FALSO*****");
 end
