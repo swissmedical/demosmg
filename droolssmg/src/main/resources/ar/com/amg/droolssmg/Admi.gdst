@@ -51,7 +51,23 @@
       <factType>Prospect</factType>
       <boundName>f5</boundName>
       <isNegated>false</isNegated>
-      <conditions/>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>Edad</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>edad</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
       <window>
         <parameters/>
       </window>
